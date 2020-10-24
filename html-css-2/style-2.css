@@ -1,0 +1,104 @@
+body {
+    margin-top: 0%;
+    
+  }
+header{
+    background: #93da93;
+    color: #ffffff;
+    padding-top: 0px;
+    min-height:70px ;
+   
+}
+.big-rectangle{
+    border: 2px solid black;
+    padding: 10px;
+    box-sizing: border-box ;
+    border-style: dotted;
+    
+}
+.shadowrect{
+    height: 100px;
+    width: 200px;
+    display: inline-block;
+    background-color: rgb(59, 15, 110);
+    padding: 10px;
+    margin: 0 20px; 
+    box-shadow: 5px 10px #c00e0e;
+
+}
+.smallsquare{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    background-color: rgb(29, 53, 190);
+    padding: 10px;
+    margin: 0 20px; 
+    box-shadow: 5px 10px #070606; 
+}
+.bigsquare{
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    background-color: rgb(233, 99, 151);
+    padding: 10px;
+    margin: 0 20px; 
+    
+}
+.smallc{
+    height: 125px;
+    width: 125px;
+    background-color: rgb(98, 178, 231);
+    border-radius: 50%;
+    display: inline-block;
+}
+.mediumc{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(98, 178, 231);
+    border-radius: 50%;
+    display:block
+}
+.largec{
+    height: 180px;
+    width: 180px;
+    background-color: rgb(98, 178, 231);
+    border-radius: 50%;
+    display: block;
+}
+
+.big-square{
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    background-color: rgb(224, 223, 204);
+    padding: 10px;
+    margin: 0 20px; 
+}
+.bcircle
+{
+    height: 180px;
+    width: 180px;
+    background-color: rgb(38, 170, 38);
+    border-radius: 50%;
+}
+.square{
+    height: 80px;
+    width: 80px;
+    
+    background-color: rgb(219, 126, 20);
+    padding: 20px;
+    margin:  0 30px; 
+
+}
+.scircle{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(98, 178, 231);
+    border-radius: 50%;
+    margin-left: 0%;
+    
+}
+.image{
+    height: 50px;
+    width: 50px;
+}
