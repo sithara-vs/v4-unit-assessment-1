@@ -10,6 +10,7 @@
 */
 
 //CODE HERE
+var gitDefinition = "Git is a program that tracks changes made to files"
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -18,6 +19,7 @@
 */
 
 //CODE HERE
+var gitHubDefinition = "GitHub is a Git repository hosting service"
 
 //////////////////PROBLEMS 3 - 9////////////////////
 /*
@@ -34,6 +36,10 @@
 */
 
 //CODE HERE
+let init = {
+    code : 'git init .',
+    description : "Make a directory"
+}
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -42,6 +48,11 @@
 */
 
 //CODE HERE
+let clone = {
+    code : 'git clone',
+    description : 'To create a local working copy of an existing remote repository, use git clone to copy and download the repository to a computer. '
+}
+
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -50,6 +61,10 @@
 */
 
 //CODE HERE
+let status = {
+    code : 'git status',
+    description : "This command returns the current state of the repository."
+}
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -58,6 +73,10 @@
 */
 
 //CODE HERE
+let add = {
+    code : 'git add .',
+    description : "Adds files in the to the staging area for Git."
+}
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -66,6 +85,12 @@
 */
 
 //CODE HERE
+let commit = {
+    code : 'git commit -m',
+    description : "Record the changes made to the files to a local repository."
+    
+   
+}
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -74,6 +99,11 @@
 */
 
 //CODE HERE
+let addRemote = {
+    code : 'git remote add origin ',
+    description : "To connect a local repository with a remote repository."
+    
+}
 
 //////////////////PROBLEM 9////////////////////
 /*
@@ -82,3 +112,9 @@
 */
 
 //CODE HERE
+
+let push = {
+    code : 'git push',
+    description : "Sends local commits to the remote repository."
+}
+

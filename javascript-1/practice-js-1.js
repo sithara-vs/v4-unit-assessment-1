@@ -2,16 +2,18 @@
 /* Create a variable called 'myName' with a value that is your name. */
 
 //CODE HERE 
-
+var myName = 'Sithara'
 //////////////////PROBLEM 2////////////////////
 /* Create a variable called 'faveNum' with a value that is your favorite number. */
 
 //CODE HERE
+var faveNum = 18
 
 //////////////////PROBLEM 3////////////////////
 /* Create a variable called 'lovesCode' and assign it a boolean value. */
 
 //CODE HERE
+var lovesCode = true
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -20,6 +22,9 @@
 */
 
 //CODE HERE
+function sum(num1, num2) {
+  return num1 + num2
+}
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -30,6 +35,13 @@
 */
 
 //CODE HERE
+function lovesCodeChecker(x) {
+  if (x === true) {
+    return true
+  }
+  else
+    return false
+}
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -40,6 +52,13 @@
 */
 
 //CODE HERE
+function oddChecker(num) {
+  if (num % 2 === 0) {
+    return 'the number is even'
+  }
+  else
+    return 'the number is odd'
+}
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -49,6 +68,9 @@
 */
 
 //CODE HERE
+function iLove(name, love) {
+  return name + ' loves ' + love
+}
 
 
 //////////////////PROBLEM 8////////////////////
@@ -57,11 +79,14 @@
 const faveColors = ['red', 'green', 'black']
 
 //CODE HERE
+let colorCopy = []
+colorCopy = faveColors.slice(0)
 
 //////////////////PROBLEM 9////////////////////
 /* Add a fourth color to the end of the 'colorCopy' array using the push method. */
 
 //CODE HERE
+colorCopy.push('blue')
 
 //////////////////PROBLEM 10////////////////////
 /*
@@ -72,6 +97,12 @@ const faveColors = ['red', 'green', 'black']
 const numbers = [1, 2, 3, 4, 5]
 
 //CODE HERE
+let middleNums = []
+middleNums = numbers
+middleNums.pop()
+middleNums.shift()
+console.log(middleNums)
+
 
 //////////////////PROBLEM 11////////////////////
 /*
@@ -88,6 +119,14 @@ const numbers = [1, 2, 3, 4, 5]
 */
 
 //CODE HERE
+var me = {
+  firstName: 'Sithara',
+  state: 'Connecticut',
+  age: 35,
+  greeter: function () {
+    return 'Hello! My name is ' + me.firstName + "and i live in " + me.state
+  }
+}
 
 //////////////////PROBLEM 12////////////////////
 /* 
@@ -103,6 +142,18 @@ const numbers = [1, 2, 3, 4, 5]
 */
 
 // CODE HERE
+function bigOrSmall(arr) {
+  let answers = []
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 100) {
+      answers.push('big')
+    }
+    else {
+      answers.push('small')
+    }
+  }
+  return answers
+}
 
 //////////////////PROBLEM 13////////////////////
 /* 
@@ -115,6 +166,14 @@ const numbers = [1, 2, 3, 4, 5]
 */
 
 //CODE HERE
+function arrayReverser(arr) {
+  var reversed = []
+  for (i = arr.length - 1; i >= 0; i--) {
+    reversed.push(arr[i])
+  }
+  return reversed
+
+}
 
 //////////////////PROBLEM 14////////////////////
 
@@ -140,16 +199,16 @@ function secondFunction() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ['global', 'inner', 'outer', 'functional']
+let globalScope = ['global']
 
 //This array should contain the variable names (as strings) accessible in the firstFunction function.
-let firstFunctionScope = ['global', 'inner', 'outer', 'functional']
+let firstFunctionScope = ['global', 'outer']
 
 //This array should contain the variable names (as strings) accessible in the innerFunction function.
-let innerFunctionScope = ['global', 'inner', 'outer', 'functional']
+let innerFunctionScope = ['global', 'inner', 'outer']
 
 //This array should contain the variable names (as strings) accessible in the secondFunction function.
-let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
+let secondFunctionScope = ['global', 'functional']
 
 
 //////////////////PROBLEM 15////////////////////
@@ -159,6 +218,9 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
 */
 
 //CODE HERE
+function firstItem(array, callback) {
+  return callback(array[0])
+}
 
 //////////////////PROBLEM 16////////////////////
 /* 
@@ -169,6 +231,14 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
 */
 
 //CODE HERE
+function isItBob(obj, cb) {
+  if (obj.name === 'Bob') {
+    return cb(true)
+  }
+  else {
+    return cb(false)
+  }
+}
 
 //////////////////PROBLEM 17////////////////////
 /*
@@ -177,6 +247,12 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
 */
 
 //CODE HERE
+function giveMeDoubles(arrNums, cb) {
+  for (let i = 0; i < arrNums.length; i++) {
+    arrNums[i] = arrNums[i] + arrNums[i]
+  }
+  cb(arrNums)
+}
 
 //////////////////PROBLEM 18////////////////////
 /*
@@ -187,3 +263,17 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
 */
 
 //CODE HERE
+function carFactory(make, model, year) {
+  var car = {
+    cmake: make,
+    cmodel: model,
+    cyear: year
+  }
+  if (year > 2018) {
+    car.isNew = true
+  }
+  else {
+    car.isNew = false
+  }
+  return car
+}
