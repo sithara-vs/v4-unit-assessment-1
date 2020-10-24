@@ -58,4 +58,10 @@ header ul{
         .box {
             float: left;
             width: 20%;
+            size: 30px;
+        }
+        
+        .box image{
+            size: 20px;
+            float: right;
         }
